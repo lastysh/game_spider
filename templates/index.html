@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>游戏网站</title>
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="nav">
+		<table>
+			<tr>
+				<td><a href="https://www.bilibili.com/" target="_blank"><span class="BTV">Bilibili</span></a></td>
+				<td><span><a href="https://www.baidu.com" target="_blank">百度</a></span></td>
+				<td><span><a href="#">微博</a></span></td>
+				<td><span><a href="#">网易</a></span></td>
+				<td><span><a href="#">微信</a></span></td>
+			</tr>
+		</table>
+	</div>
+	<div class="games">
+		<ul>
+			{% for i in game %}
+			<li>
+				<div class="show">
+					<div><a href="{{ i[2] }}"><img  alt="{{ i[1] }}" src="{{ i[3] }}"></a></div>
+					<span><a href="{{ i[2] }}">{{ i[1] }}</a></span>
+				</div>
+			<li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="button">
+		{% if game[0][0] > 100 %}
+		<button><a href="/page/Back" role="button">上一页</a></button>
+		{% endif %}
+		{% if game[0][0] < 301 %}
+		<button><a href="/page/Next" role="button">下一页</a></button>
+		{% endif %}
+	</div>
+	<div class="bottom">
+		<a>&copy Copyright Fuzhou DWGT5P {{ time }}</a>
+	</div>
+</body>
+</html>

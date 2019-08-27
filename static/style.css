@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 10px 0;
+    width: 100%;
+    height: 1200px;
+    background: url("dc80279.jpeg") no-repeat;
+    text-align: center;
+    background-size: 100% 1600px;
+}
+.nav{
+    height: 50px;
+    width: 100%;
+    background: #f60;
+}
+.nav table{
+    width: 100%;
+    height: 50px;
+    border-spacing: 0;
+}
+.nav td{
+    width: 300px;
+    height: 50px;
+    font-size: 22px;
+}
+.nav td span a{
+    text-decoration: none;
+    color: #0f0f0f;
+}
+.nav .BTV{
+    width: 120px;
+    line-height: 50px;
+    background-color: #f45a8d;
+    display: inline-block;
+    color: white;
+}
+.games{
+    display: inline-block;
+    margin: 20px auto;
+    width: 1200px;
+    background: rgba(205, 103, 200, 0.2);
+}
+.show{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+.show div{
+    width: 72px;
+    height: 72px;
+    margin: 5px auto;
+}
+.show span{
+    position: absolute;
+    left: 18px;
+}
+.show span a:link{
+    text-decoration: none;
+}
+li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 0;
+}
+.button button{
+    margin: 5px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    background-color: #bce8f1;
+    border-radius: 3px;
+}
+.button a:link{
+    text-decoration: none;
+    color: #f60;
+}
+.button a:hover{
+    cursor: pointer;
+    color: #00b3ee;
+}
+.button a:active{
+    color: darkred;
+}
+.bottom{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #f60;
+    color: rgba(255, 255, 255, 0.8);
+}
